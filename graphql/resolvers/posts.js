@@ -1,4 +1,5 @@
 const { AuthenticationError, UserInputError } = require('apollo-server');
+const { argsToArgsConfig } = require('graphql/type/definition');
 const Post = require('../../models/Post');
 const checkAuth = require('../../utils/check-auth');
 
@@ -29,6 +30,10 @@ module.exports = {
     Mutation: {
         async createPost(_, { body }, context){
             const user = checkAuth(context);
+
+            if (argsToArgsConfig.body.trim() === '') {
+                throw new Error('Post body ust not be empty');
+            }
             console.log(user);
             const newPost = new Post({
                 body,
