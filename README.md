@@ -24,7 +24,7 @@
 
   #### Node, graphql, react
 
-* [CLICK HERE](https://artem-lab.netlify.app/register) for deployed website.
+* [CLICK HERE](https://artem-lab.netlify.app) for deployed website.
 
 <img width="845" alt="image" src="https://user-images.githubusercontent.com/95582357/198152632-a630010b-47e5-4a31-ac6d-5e1d8f67c22b.png">
 
